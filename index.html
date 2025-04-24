@@ -9,20 +9,23 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <img src="assets/sjcc-logo.png" alt="SJ Community Collaborations Logo" class="logo">
     <h1>SJ Community Collaborations (SJCC)</h1>
     <p class="tagline">Equity-Focused Consulting for Mission-Driven Work</p>
   </header>
 
+  <!-- NAVIGATION -->
   <nav>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="section-title">About SJCC</div>
+  <!-- ABOUT -->
+  <div class="section-title" id="about">About SJCC</div>
   <section>
     <p>
       SJCC partners with public and nonprofit organizations to build stronger systems, equitable policies, and data-informed strategies. 
@@ -32,32 +35,71 @@
 
   <div class="section-divider"></div>
 
-  <div class="section-title">Services</div>
+  <!-- SERVICES -->
+  <div class="section-title" id="services">Services</div>
   <section>
+
     <div class="service-card">
-      <div class="service-header">Grant Development & Compliance Advising
-        <button class="service-button">See Examples</button>
+      <div class="service-header">
+        <input type="radio" name="service" id="service1">
+        <label for="service1">Grant Development & Compliance Advising</label>
+        <div class="service-detail">
+          We support organizations with funding strategies, logic models, budget narratives, and compliance documentation.
+        </div>
       </div>
     </div>
 
     <div class="service-card">
-      <div class="service-header">Grant Review & Peer Evaluation
-        <button class="service-button">See Examples</button>
+      <div class="service-header">
+        <input type="radio" name="service" id="service2">
+        <label for="service2">Grant Review & Peer Evaluation</label>
+        <div class="service-detail">
+          We provide narrative reviews, scoring rubrics, and mock panel feedback to strengthen applications and strategic alignment.
+        </div>
       </div>
     </div>
 
     <div class="service-card">
-      <div class="service-header">Custom Training Module Design
-        <button class="service-button">See Examples</button>
+      <div class="service-header">
+        <input type="radio" name="service" id="service3">
+        <label for="service3">Custom Training Module Design</label>
+        <div class="service-detail">
+          We design learning modules for justice, public health, and policy-focused teams. Options include LMS content, workshops, and toolkits.
+        </div>
       </div>
     </div>
+
   </section>
 
   <div class="section-divider"></div>
 
-  <footer>
-    &copy; 2025 SJ Community Collaborations. All rights reserved.
-  </footer>
+  <!-- PROJECTS -->
+  <div class="section-title" id="projects">Highlighted Projects</div>
+  <section>
+    <ul>
+      <li><strong>Reentry Program Toolkit:</strong> Developed a customizable toolkit for post-incarceration programs focused on workforce training and housing navigation.</li>
+      <li><strong>Data Equity Dashboard:</strong> Built an interactive reporting system for nonprofits to track demographic outcomes and funding distribution.</li>
+      <li><strong>Funded Proposal Library:</strong> Created a searchable archive of successful proposals, budget samples, and funder match guides.</li>
+    </ul>
+  </section>
 
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <div class="section-title" id="contact">Contact</div>
+  <section>
+    <p>Let's work together! You can reach SJCC via:</p>
+    <ul>
+      <li><strong>Email:</strong> info@sjcollab.org</li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sjcollab" target="_blank">linkedin.com/in/sjcollab</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/sjcollab" target="_blank">github.com/sjcollab</a></li>
+    </ul>
+  </section>
+
+  <footer>
+  <footer>
+  &copy; SJ Community Collaborations. All rights reserved. R2025.
+</footer>
+    
 </body>
 </html>
