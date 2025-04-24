@@ -8,12 +8,20 @@
   --font-body: 'Open Sans', sans-serif;
 }
 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-body);
   background-color: var(--background);
   color: var(--text);
 }
 
+/* HEADER */
 header {
   background-color: var(--text);
   color: white;
@@ -22,8 +30,8 @@ header {
 }
 
 .logo {
-  width: 100%;
   max-width: 400px;
+  width: 100%;
   display: block;
   margin: 0 auto 15px auto;
 }
@@ -40,6 +48,7 @@ header h1 {
   font-style: italic;
 }
 
+/* NAVIGATION */
 nav {
   background-color: var(--primary);
   display: flex;
@@ -49,22 +58,24 @@ nav {
 }
 
 nav a {
-  color: var(--accent); /* burnt orange links */
+  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
+/* SECTION TITLE BARS */
 .section-title {
-  background-color: var(--highlight); /* clay red */
-  color: white;
+  background-color: var(--primary);
+  color: var(--highlight);
   padding: 14px 20px;
   font-family: var(--font-header);
-  font-size: 1.4rem;
-  border-left: 6px solid var(--accent);
+  font-size: 1.5rem;
   margin-top: 40px;
   margin-bottom: 10px;
 }
 
+/* SECTION DIVIDERS */
 .section-divider {
   height: 4px;
   background-color: var(--accent);
@@ -73,6 +84,7 @@ nav a {
   border-radius: 2px;
 }
 
+/* CONTENT SECTIONS */
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -83,6 +95,12 @@ section {
   margin-bottom: 30px;
 }
 
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* SERVICE CARDS + RADIO */
 .service-card {
   background: #ffffff;
   border-left: 6px solid var(--primary);
@@ -92,33 +110,39 @@ section {
   margin-bottom: 20px;
 }
 
-.service-header {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 8px;
+.service-label {
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 8px;
 }
 
 .service-detail {
   display: none;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid var(--primary);
   font-size: 0.95em;
   color: #444;
-  border-left: 3px solid var(--primary);
-  padding-left: 10px;
 }
 
-input[type=radio] {
-  accent-color: var(--primary);
+/* Custom-styled RADIO BUTTONS */
+input[type="radio"] {
+  accent-color: var(--accent);
+  transform: scale(1.2);
+  margin-right: 6px;
 }
 
-input[type=radio]:checked + label + .service-detail {
+input[type="radio"]:checked + label + .service-detail {
   display: block;
 }
 
+/* FOOTER */
 footer {
   background-color: var(--primary);
   color: var(--background);
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
+  border-top: 4px solid var(--accent);
 }
