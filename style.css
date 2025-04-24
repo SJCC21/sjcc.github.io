@@ -87,6 +87,57 @@ footer {
   }
 }
 
-    flex-direction: column;
-  }
+/* 🔥 Bold Professional Service Card Styles */
+.service-card {
+  background: #ffffff;
+  border-left: 6px solid #00C2CB;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1A1F2B;
+}
+
+.service-header i {
+  margin-right: 10px;
+  color: #00C2CB;
+}
+
+.service-button {
+  background-color: #1A1F2B;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.service-button:hover {
+  background-color: #FFC857;
+  color: #1A1F2B;
+}
+
+.service-detail {
+  display: none;
+  margin-top: 12px;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #444;
+  padding-left: 5px;
+  border-left: 3px solid #00C2CB;
 }
