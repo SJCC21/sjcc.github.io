@@ -64,7 +64,7 @@ nav a {
   font-size: 1.1rem;
 }
 
-/* SECTION TITLE BARS */
+/* SECTION TITLES */
 .section-title {
   background-color: var(--primary);
   color: var(--highlight);
@@ -75,7 +75,7 @@ nav a {
   margin-bottom: 10px;
 }
 
-/* SECTION DIVIDERS */
+/* DIVIDERS */
 .section-divider {
   height: 4px;
   background-color: var(--accent);
@@ -84,7 +84,7 @@ nav a {
   border-radius: 2px;
 }
 
-/* CONTENT SECTIONS */
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -100,7 +100,7 @@ ul {
   line-height: 1.6;
 }
 
-/* SERVICE CARDS + RADIO */
+/* SERVICES */
 .service-card {
   background: #ffffff;
   border-left: 6px solid var(--primary);
@@ -126,7 +126,7 @@ ul {
   color: #444;
 }
 
-/* Custom-styled RADIO BUTTONS */
+/* RADIO BUTTONS */
 input[type="radio"] {
   accent-color: var(--accent);
   transform: scale(1.2);
