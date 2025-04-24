@@ -1,4 +1,19 @@
-/* Basic reset */
+/* ---------------------------------- */
+/* SJ Community Collaborations: Brand Theme CSS */
+/* ---------------------------------- */
+
+/* 🎨 BRAND VARIABLES */
+:root {
+  --primary: #0F5B66;     /* Deep Teal */
+  --accent: #D95A1A;      /* Burnt Orange */
+  --highlight: #B5482B;   /* Clay Red */
+  --background: #FAF3E7;  /* Cream */
+  --text: #2F3A42;        /* Charcoal */
+  --font-header: 'League Spartan', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+/* 🌐 BASIC RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +21,16 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   line-height: 1.6;
-  background-color: #F7F9FA;
-  color: #1A1F2B;
+  background-color: var(--background);
+  color: var(--text);
   padding: 20px;
 }
 
+/* 🧠 HEADER */
 header {
-  background-color: #1A1F2B;
+  background-color: var(--text);
   color: white;
   padding: 30px 20px;
   text-align: center;
@@ -23,28 +39,31 @@ header {
 header h1 {
   font-size: 2em;
   margin-bottom: 10px;
+  font-family: var(--font-header);
 }
 
 .tagline {
   font-style: italic;
-  color: #FFC857;
+  color: var(--accent);
 }
 
+/* 🧭 NAVIGATION BAR */
 nav {
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: #00C2CB;
+  background-color: var(--primary);
   padding: 10px;
   margin-top: 5px;
 }
 
 nav a {
   text-decoration: none;
-  color: #1A1F2B;
+  color: var(--background);
   font-weight: bold;
 }
 
+/* 🧾 SECTION STYLES */
 section {
   max-width: 800px;
   margin: 30px auto;
@@ -55,24 +74,28 @@ section {
 }
 
 section h2 {
-  color: #1A1F2B;
+  color: var(--text);
   margin-bottom: 15px;
+  font-family: var(--font-header);
 }
 
+/* 📋 LISTS */
 ul {
   padding-left: 20px;
   list-style-type: disc;
 }
 
+/* 🦶 FOOTER */
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #00C2CB;
-  color: #1A1F2B;
+  background-color: var(--primary);
+  color: var(--background);
   font-size: 0.9em;
   margin-top: 30px;
 }
 
+/* 🌳 LOGO IMAGE */
 .logo {
   max-width: 120px;
   margin-bottom: 15px;
@@ -81,16 +104,17 @@ footer {
   margin-right: auto;
 }
 
+/* 📱 MOBILE NAVIGATION */
 @media screen and (max-width: 600px) {
   nav {
     flex-direction: column;
   }
 }
 
-/* 🔥 Bold Professional Service Card Styles */
+/* 💼 SERVICE CARDS */
 .service-card {
   background: #ffffff;
-  border-left: 6px solid #00C2CB;
+  border-left: 6px solid var(--primary);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -108,16 +132,16 @@ footer {
   align-items: center;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #1A1F2B;
+  color: var(--text);
 }
 
 .service-header i {
   margin-right: 10px;
-  color: #00C2CB;
+  color: var(--primary);
 }
 
 .service-button {
-  background-color: #1A1F2B;
+  background-color: var(--text);
   color: #ffffff;
   border: none;
   padding: 6px 14px;
@@ -128,8 +152,8 @@ footer {
 }
 
 .service-button:hover {
-  background-color: #FFC857;
-  color: #1A1F2B;
+  background-color: var(--accent);
+  color: var(--text);
 }
 
 .service-detail {
@@ -139,5 +163,16 @@ footer {
   line-height: 1.5;
   color: #444;
   padding-left: 5px;
-  border-left: 3px solid #00C2CB;
+  border-left: 3px solid var(--primary);
+}
+
+/* ✅ RADIO BUTTONS & FORMS */
+input[type="radio"] {
+  accent-color: var(--primary);
+}
+
+label {
+  font-family: var(--font-body);
+  color: var(--text);
+  margin-left: 8px;
 }
