@@ -1,142 +1,121 @@
-:root {
-  --primary: #0F5B66;     /* Deep Teal */
-  --accent: #D95A1A;      /* Burnt Orange */
-  --highlight: #B5482B;   /* Clay Red */
-  --background: #FAF3E7;  /* Cream */
-  --text: #2F3A42;        /* Charcoal */
-  --font-header: 'League Spartan', sans-serif;
-  --font-body: 'Open Sans', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SJCC | Equity-Focused Consulting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="SJ Community Collaborations Logo" class="logo">
+    <h1>SJ Community Collaborations (SJCC)</h1>
+    <p class="tagline">Equity-Focused Consulting for Mission-Driven Work</p>
+  </header>
 
-body {
-  font-family: var(--font-body);
-  background-color: var(--background);
-  color: var(--text);
-}
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-/* HEADER */
-header {
-  background-color: var(--text);
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-}
+  <!-- ABOUT -->
+  <div class="section-title" id="about">About SJCC</div>
+  <section>
+    <p>
+      SJCC partners with public and nonprofit organizations to build stronger systems, equitable policies, and data-informed strategies.
+      We specialize in grant development, reentry program design, and learning modules for research and justice-focused institutions.
+    </p>
+  </section>
 
-.logo {
-  max-width: 400px;
-  width: 100%;
-  display: block;
-  margin: 0 auto 15px auto;
-}
+  <div class="section-divider"></div>
 
-header h1 {
-  font-size: 2.2rem;
-  font-family: var(--font-header);
-  margin-bottom: 10px;
-}
+  <!-- SERVICES -->
+  <div class="section-title" id="services">Services</div>
+  <section>
 
-.tagline {
-  color: var(--accent);
-  font-size: 1.1rem;
-  font-style: italic;
-}
+    <div class="service-card">
+      <input type="radio" id="service1" name="service">
+      <label for="service1" class="service-label">Grant Development & Compliance Advising</label>
+      <div class="service-detail">Funding strategies, logic models, budgets, compliance matrices.</div>
+    </div>
 
-/* NAVBAR */
-nav {
-  background-color: var(--primary);
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 12px;
-}
+    <div class="service-card">
+      <input type="radio" id="service2" name="service">
+      <label for="service2" class="service-label">Grant Review & Federal Peer Evaluation</label>
+      <div class="service-detail">Scoring rubrics, federal-style reviews, panel feedback simulations.</div>
+    </div>
 
-nav a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-}
+    <div class="service-card">
+      <input type="radio" id="service3" name="service">
+      <label for="service3" class="service-label">Training Module Design (Canvas, LMS, AI-enhanced)</label>
+      <div class="service-detail">Modules, LMS builds, AI prompts, and interactive tools.</div>
+    </div>
 
-/* SECTION TITLES */
-.section-title {
-  background-color: var(--primary);
-  color: var(--highlight);
-  padding: 14px 20px;
-  font-family: var(--font-header);
-  font-size: 1.5rem;
-  margin-top: 40px;
-  margin-bottom: 10px;
-}
+    <div class="service-card">
+      <input type="radio" id="service4" name="service">
+      <label for="service4" class="service-label">Contract Review & Policy Translation</label>
+      <div class="service-detail">Plain-language policy summaries, MOU translation, redline reviews.</div>
+    </div>
 
-.section-divider {
-  height: 4px;
-  background-color: var(--accent);
-  margin: 30px auto;
-  width: 90%;
-  border-radius: 2px;
-}
+    <div class="service-card">
+      <input type="radio" id="service5" name="service">
+      <label for="service5" class="service-label">Evaluation Frameworks & Data Visualization</label>
+      <div class="service-detail">SMART outcomes, logic models, dashboards, reports.</div>
+    </div>
 
-/* SECTIONS */
-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 30px 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-  margin-bottom: 30px;
-}
+    <div class="service-card">
+      <input type="radio" id="service6" name="service">
+      <label for="service6" class="service-label">Cross-Sector Strategy & Systems Building</label>
+      <div class="service-detail">Coalition building, systems maps, sector alignment strategies.</div>
+    </div>
 
-/* SERVICE CARDS */
-.service-card {
-  background: #ffffff;
-  border-left: 6px solid var(--primary);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  margin-bottom: 20px;
-}
+    <div class="service-card">
+      <input type="radio" id="service7" name="service">
+      <label for="service7" class="service-label">AI Tools for Nonprofit/Academic Teams</label>
+      <div class="service-detail">Prompt libraries, ethical AI policies, AI-powered workflows.</div>
+    </div>
 
-.service-label {
-  font-weight: bold;
-  margin-left: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-}
+    <div class="service-card">
+      <input type="radio" id="service8" name="service">
+      <label for="service8" class="service-label">Technical Assistance & Stakeholder Facilitation</label>
+      <div class="service-detail">Ongoing support, coaching, cohort learning, meeting design.</div>
+    </div>
 
-.service-detail {
-  display: none;
-  margin-top: 10px;
-  padding-left: 15px;
-  border-left: 3px solid var(--primary);
-  font-size: 0.95em;
-  color: #444;
-}
+  </section>
 
-/* RADIO BUTTON STYLE */
-input[type="radio"] {
-  accent-color: var(--accent);
-  transform: scale(1.2);
-  margin-right: 6px;
-}
+  <div class="section-divider"></div>
 
-input[type="radio"]:checked + label + .service-detail {
-  display: block;
-}
+  <!-- PROJECTS -->
+  <div class="section-title" id="projects">Highlighted Projects</div>
+  <section>
+    <ul>
+      <li><strong>Reentry Toolkit:</strong> Full guide for local program design + evaluation.</li>
+      <li><strong>Equity Dashboard:</strong> Data visualization for community metrics + funder goals.</li>
+      <li><strong>Justice Training Series:</strong> LMS course for advocacy groups and nonprofits.</li>
+    </ul>
+  </section>
 
-/* FOOTER */
-footer {
-  background-color: var(--primary);
-  color: var(--background);
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  border-top: 4px solid var(--accent);
-}
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <div class="section-title" id="contact">Contact</div>
+  <section>
+    <p>Want to work together? Reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> info@sjcollab.org</li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sjcollab" target="_blank">linkedin.com/in/sjcollab</a></li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; SJ Community Collaborations. All rights reserved. R2025.
+  </footer>
+
+</body>
+</html>
