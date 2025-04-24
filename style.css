@@ -8,21 +8,12 @@
   --font-body: 'Open Sans', sans-serif;
 }
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--font-body);
-  line-height: 1.6;
   background-color: var(--background);
   color: var(--text);
 }
 
-/* HEADER */
 header {
   background-color: var(--text);
   color: white;
@@ -38,40 +29,37 @@ header {
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-family: var(--font-header);
   margin-bottom: 10px;
 }
 
 .tagline {
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 
-/* NAVBAR */
 nav {
   background-color: var(--primary);
-  color: white;
-  padding: 12px;
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding: 12px;
 }
 
 nav a {
-  color: var(--background);
+  color: var(--accent); /* burnt orange links */
   text-decoration: none;
   font-weight: bold;
 }
 
-/* SECTIONS */
 .section-title {
-  background-color: var(--primary);
+  background-color: var(--highlight); /* clay red */
   color: white;
-  padding: 12px 20px;
+  padding: 14px 20px;
   font-family: var(--font-header);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   border-left: 6px solid var(--accent);
   margin-top: 40px;
   margin-bottom: 10px;
@@ -95,7 +83,6 @@ section {
   margin-bottom: 30px;
 }
 
-/* SERVICE CARDS */
 .service-card {
   background: #ffffff;
   border-left: 6px solid var(--primary);
@@ -103,51 +90,35 @@ section {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
   margin-bottom: 20px;
-  transition: box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .service-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--text);
+  margin-bottom: 8px;
 }
 
-.service-button {
-  background-color: var(--text);
-  color: #ffffff;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+.service-detail {
+  display: none;
+  padding-top: 10px;
+  font-size: 0.95em;
+  color: #444;
+  border-left: 3px solid var(--primary);
+  padding-left: 10px;
 }
 
-.service-button:hover {
-  background-color: var(--accent);
-  color: var(--text);
+input[type=radio] {
+  accent-color: var(--primary);
 }
 
-/* FOOTER */
+input[type=radio]:checked + label + .service-detail {
+  display: block;
+}
+
 footer {
   background-color: var(--primary);
   color: var(--background);
   text-align: center;
   padding: 15px;
   font-size: 0.9rem;
-}
-
-/* RESPONSIVE NAV */
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    gap: 12px;
-  }
 }
