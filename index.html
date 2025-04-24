@@ -1,102 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SJCC | Equity-Focused Consulting</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-</head>
-<body>
+:root {
+  --primary: #0F5B66;     /* Deep Teal */
+  --accent: #D95A1A;      /* Burnt Orange */
+  --highlight: #B5482B;   /* Clay Red */
+  --background: #FAF3E7;  /* Cream */
+  --text: #2F3A42;        /* Charcoal */
+  --font-header: 'League Spartan', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
 
-  <!-- HEADER -->
-  <header>
-    <img src="assets/sjcc-logo.png" alt="SJ Community Collaborations Logo" class="logo">
-    <h1>SJ Community Collaborations (SJCC)</h1>
-    <p class="tagline">Equity-Focused Consulting for Mission-Driven Work</p>
-  </header>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+}
 
-  <!-- ABOUT -->
-  <div class="section-title" id="about">About SJCC</div>
-  <section>
-    <p>
-      SJCC partners with public and nonprofit organizations to build stronger systems, equitable policies, and data-informed strategies. 
-      We specialize in grant development, reentry program design, and learning modules for research and justice-focused institutions.
-    </p>
-  </section>
+/* HEADER */
+header {
+  background-color: var(--text);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
 
-  <div class="section-divider"></div>
+.logo {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 0 auto 15px auto;
+}
 
-  <!-- SERVICES -->
-  <div class="section-title" id="services">Services</div>
-  <section>
+header h1 {
+  font-size: 2.2rem;
+  font-family: var(--font-header);
+  margin-bottom: 10px;
+}
 
-    <div class="service-card">
-      <div class="service-header">
-        <input type="radio" name="service" id="service1">
-        <label for="service1">Grant Development & Compliance Advising</label>
-        <div class="service-detail">
-          We support organizations with funding strategies, logic models, budget narratives, and compliance documentation.
-        </div>
-      </div>
-    </div>
+.tagline {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-style: italic;
+}
 
-    <div class="service-card">
-      <div class="service-header">
-        <input type="radio" name="service" id="service2">
-        <label for="service2">Grant Review & Peer Evaluation</label>
-        <div class="service-detail">
-          We provide narrative reviews, scoring rubrics, and mock panel feedback to strengthen applications and strategic alignment.
-        </div>
-      </div>
-    </div>
+/* NAVBAR */
+nav {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px;
+}
 
-    <div class="service-card">
-      <div class="service-header">
-        <input type="radio" name="service" id="service3">
-        <label for="service3">Custom Training Module Design</label>
-        <div class="service-detail">
-          We design learning modules for justice, public health, and policy-focused teams. Options include LMS content, workshops, and toolkits.
-        </div>
-      </div>
-    </div>
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
 
-  </section>
+/* SECTION TITLES */
+.section-title {
+  background-color: var(--primary);
+  color: var(--highlight);
+  padding: 14px 20px;
+  font-family: var(--font-header);
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
 
-  <div class="section-divider"></div>
+.section-divider {
+  height: 4px;
+  background-color: var(--accent);
+  margin: 30px auto;
+  width: 90%;
+  border-radius: 2px;
+}
 
-  <!-- PROJECTS -->
-  <div class="section-title" id="projects">Highlighted Projects</div>
-  <section>
-    <ul>
-      <li><strong>Reentry Program Toolkit:</strong> Developed a customizable toolkit for post-incarceration programs focused on workforce training and housing navigation.</li>
-      <li><strong>Data Equity Dashboard:</strong> Built an interactive reporting system for nonprofits to track demographic outcomes and funding distribution.</li>
-      <li><strong>Funded Proposal Library:</strong> Created a searchable archive of successful proposals, budget samples, and funder match guides.</li>
-    </ul>
-  </section>
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
 
-  <div class="section-divider"></div>
+/* SERVICE CARDS */
+.service-card {
+  background: #ffffff;
+  border-left: 6px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 20px;
+}
 
-  <!-- CONTACT -->
-  <div class="section-title" id="contact">Contact</div>
-  <section>
-    <p>Let's work together! You can reach SJCC via:</p>
-    <ul>
-      <li><strong>Email:</strong> info@sjcollab.org</li>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sjcollab" target="_blank">linkedin.com/in/sjcollab</a></li>
-      <li><strong>GitHub:</strong> <a href="https://github.com/sjcollab" target="_blank">github.com/sjcollab</a></li>
-    </ul>
-  </section>
+.service-label {
+  font-weight: bold;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
- footer {
+.service-detail {
+  display: none;
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid var(--primary);
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* RADIO BUTTON STYLE */
+input[type="radio"] {
+  accent-color: var(--accent);
+  transform: scale(1.2);
+  margin-right: 6px;
+}
+
+input[type="radio"]:checked + label + .service-detail {
+  display: block;
+}
+
+/* FOOTER */
+footer {
   background-color: var(--primary);
   color: var(--background);
   text-align: center;
@@ -104,8 +140,3 @@
   font-size: 0.9rem;
   border-top: 4px solid var(--accent);
 }
-
-</footer>
-    
-</body>
-</html>
