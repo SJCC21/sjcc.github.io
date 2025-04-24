@@ -9,6 +9,38 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a2e00b6a33.js" crossorigin="anonymous"></script>
+  <style>
+    .service-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .service-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .service-header i {
+      margin-right: 10px;
+    }
+    .service-button {
+      background-color: #00C2CB;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .service-detail {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -31,16 +63,62 @@
 
   <section id="services">
     <h2>Services</h2>
-    <ul class="icon-list">
-      <li><i class="fas fa-file-signature"></i> Grant Development & Compliance Advising</li>
-      <li><i class="fas fa-check-double"></i> Grant Review & Peer Evaluation (DOJ/CDC/Federal)</li>
-      <li><i class="fas fa-laptop-code"></i> Custom Training Module Design (Canvas, LMS, AI-enhanced)</li>
-      <li><i class="fas fa-file-contract"></i> Contract Review & Policy Translation</li>
-      <li><i class="fas fa-database"></i> Data-Driven Evaluation Frameworks & Reporting</li>
-      <li><i class="fas fa-people-arrows"></i> Cross-Sector Collaboration Strategy (Courts, Higher Ed, Community)</li>
-      <li><i class="fas fa-brain"></i> AI-Integrated Strategy for Nonprofits & Learning Systems</li>
-      <li><i class="fas fa-comments"></i> Technical Assistance & Stakeholder Training</li>
-    </ul>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-file-signature"></i> Grant Development & Compliance Advising</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Includes federal proposals, subaward guidance, indirect cost negotiation, and Cayuse routing support.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-check-double"></i> Grant Review & Peer Evaluation</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Served as reviewer for DOJ, CDC, and peer foundation applications with compliance and impact analysis.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-laptop-code"></i> Custom Training Module Design</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Built onboarding curricula in Canvas with automation, voiceover tools, and AI-supported navigation.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-file-contract"></i> Contract Review & Policy Translation</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Translated research MOUs, NDAs, and foundation contracts into internal guides and team workflows.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-database"></i> Data-Driven Evaluation Frameworks</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Created logic models, tiered monitoring systems, and visualization dashboards for grantee reporting.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-people-arrows"></i> Cross-Sector Collaboration Strategy</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Facilitated partnership plans between courts, universities, and nonprofits including shared deliverables.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-brain"></i> AI-Integrated Strategy for Nonprofits</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Used tools like Gamma, Mindsera, CodePen, and Claude to streamline nonprofit learning and proposals.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-header">
+        <p><i class="fas fa-comments"></i> Technical Assistance & Stakeholder Training</p>
+        <button class="service-button" onclick="toggleDetail(this)">See Examples</button>
+      </div>
+      <div class="service-detail">Delivered grant training, facilitated restorative sessions, and guided teams through post-award systems.</div>
+    </div>
   </section>
 
   <section id="projects">
@@ -62,5 +140,12 @@
   <footer>
     <p>&copy; 2025 SJ Community Collaborations. All rights reserved.</p>
   </footer>
+
+  <script>
+    function toggleDetail(button) {
+      const detail = button.parentElement.nextElementSibling;
+      detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
