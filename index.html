@@ -10,9 +10,7 @@
 
   <!-- HEADER -->
   <header>
-    <img src="logo.png" alt="SJ Community Collaborations Logo" class="logo">
-    <h1>SJ Community Collaborations (SJCC)</h1>
-    <p class="tagline">Equity-Focused Consulting for Mission-Driven Work</p>
+    <img src="logo.png" alt="SJ Community Collaborations Logo" class="logo-full">
   </header>
 
   <!-- NAVIGATION -->
@@ -39,51 +37,83 @@
   <section>
 
     <div class="service-card">
-      <input type="radio" id="service1" name="service">
-      <label for="service1" class="service-label">Grant Development & Compliance Advising</label>
-      <div class="service-detail">Funding strategies, logic models, budgets, compliance matrices.</div>
+      <div class="service-header">
+        Grant Development & Compliance Advising
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Funding strategies, logic models, budgets, compliance matrices.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service2" name="service">
-      <label for="service2" class="service-label">Grant Review & Federal Peer Evaluation</label>
-      <div class="service-detail">Scoring rubrics, federal-style reviews, panel feedback simulations.</div>
+      <div class="service-header">
+        Grant Review & Federal Peer Evaluation
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Scoring rubrics, federal-style reviews, panel feedback simulations.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service3" name="service">
-      <label for="service3" class="service-label">Training Module Design (Canvas, LMS, AI-enhanced)</label>
-      <div class="service-detail">Modules, LMS builds, AI prompts, and interactive tools.</div>
+      <div class="service-header">
+        Training Module Design (Canvas, LMS, AI-enhanced)
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Modules, LMS builds, AI prompts, and interactive tools.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service4" name="service">
-      <label for="service4" class="service-label">Contract Review & Policy Translation</label>
-      <div class="service-detail">Plain-language policy summaries, MOU translation, redline reviews.</div>
+      <div class="service-header">
+        Contract Review & Policy Translation
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Plain-language policy summaries, MOU translation, redline reviews.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service5" name="service">
-      <label for="service5" class="service-label">Evaluation Frameworks & Data Visualization</label>
-      <div class="service-detail">SMART outcomes, logic models, dashboards, reports.</div>
+      <div class="service-header">
+        Evaluation Frameworks & Dashboards
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        SMART outcomes, logic models, dashboards, reports.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service6" name="service">
-      <label for="service6" class="service-label">Cross-Sector Strategy & Systems Building</label>
-      <div class="service-detail">Coalition building, systems maps, sector alignment strategies.</div>
+      <div class="service-header">
+        Cross-Sector Strategy & Systems Building
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Coalition building, systems maps, sector alignment strategies.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service7" name="service">
-      <label for="service7" class="service-label">AI Tools for Nonprofit/Academic Teams</label>
-      <div class="service-detail">Prompt libraries, ethical AI policies, AI-powered workflows.</div>
+      <div class="service-header">
+        AI Tools for Nonprofit/Academic Teams
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Prompt libraries, ethical AI policies, AI-powered workflows.
+      </div>
     </div>
 
     <div class="service-card">
-      <input type="radio" id="service8" name="service">
-      <label for="service8" class="service-label">Technical Assistance & Stakeholder Facilitation</label>
-      <div class="service-detail">Ongoing support, coaching, cohort learning, meeting design.</div>
+      <div class="service-header">
+        Technical Assistance & Stakeholder Facilitation
+        <button class="toggle-btn">See Examples</button>
+      </div>
+      <div class="service-detail">
+        Ongoing support, coaching, cohort learning, meeting design.
+      </div>
     </div>
 
   </section>
@@ -94,9 +124,9 @@
   <div class="section-title" id="projects">Highlighted Projects</div>
   <section>
     <ul>
-      <li><strong>Reentry Toolkit:</strong> Full guide for local program design + evaluation.</li>
-      <li><strong>Equity Dashboard:</strong> Data visualization for community metrics + funder goals.</li>
-      <li><strong>Justice Training Series:</strong> LMS course for advocacy groups and nonprofits.</li>
+      <li><strong>GPOA Capstone Evaluation Redesign:</strong> Created a tiered monitoring system, data visualization model, and grantee training supports.</li>
+      <li><strong>19th JDC & Natchez Cross-Jurisdictional Strategic Plan:</strong> Developed a multi-site implementation framework to support justice reform across city/state boundaries.</li>
+      <li><strong>Equity-Focused Grantmaking Strategy:</strong> Designed a funder-focused rubric, funding equity heat map, and a scalable implementation toolkit.</li>
     </ul>
   </section>
 
@@ -116,6 +146,17 @@
   <footer>
     &copy; SJ Community Collaborations. All rights reserved. R2025.
   </footer>
+
+  <!-- TOGGLE SCRIPT -->
+  <script>
+    const buttons = document.querySelectorAll('.toggle-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const detail = btn.parentElement.nextElementSibling;
+        detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
 
 </body>
 </html>
