@@ -23,15 +23,38 @@ body {
 
 /* HERO HEADER */
 .hero-header {
-  background-image: url('logo.png'); /* Use 'neighborhood.png' if needed */
+  background-image: url('backdrop.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+/* TEXT ON HERO IMAGE */
+.hero-text {
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 12px 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.hero-text h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-family: var(--font-header);
+  margin-bottom: 6px;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--accent);
 }
 
 /* NAVIGATION */
