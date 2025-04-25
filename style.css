@@ -56,7 +56,7 @@ nav {
 }
 
 nav a {
-  color: var(--accent); /* instead of white */
+  color: var(--accent);
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
