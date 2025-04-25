@@ -8,7 +8,6 @@
   --font-body: 'Open Sans', sans-serif;
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -21,34 +20,22 @@ body {
   color: var(--text);
 }
 
-/* HEADER */
+/* HEADER WITH FULL LOGO */
 header {
   background-color: var(--text);
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
+  padding: 48px 96px; /* top/bottom = 48px, left/right = 96px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  max-width: 400px;
-  width: 100%;
+.logo-full {
+  max-width: 100%;
+  height: auto;
   display: block;
-  margin: 0 auto 15px auto;
 }
 
-header h1 {
-  font-size: 2.2rem;
-  font-family: var(--font-header);
-  margin-bottom: 10px;
-}
-
-.tagline {
-  color: var(--accent);
-  font-size: 1.1rem;
-  font-style: italic;
-}
-
-/* NAVIGATION */
+/* NAVBAR */
 nav {
   background-color: var(--primary);
   display: flex;
@@ -67,7 +54,7 @@ nav a {
 /* SECTION TITLES */
 .section-title {
   background-color: var(--primary);
-  color: var(--highlight);
+  color: white;
   padding: 14px 20px;
   font-family: var(--font-header);
   font-size: 1.5rem;
@@ -75,7 +62,6 @@ nav a {
   margin-bottom: 10px;
 }
 
-/* DIVIDERS */
 .section-divider {
   height: 4px;
   background-color: var(--accent);
@@ -84,7 +70,6 @@ nav a {
   border-radius: 2px;
 }
 
-/* SECTIONS */
 section {
   max-width: 900px;
   margin: 0 auto;
@@ -100,7 +85,7 @@ ul {
   line-height: 1.6;
 }
 
-/* SERVICES */
+/* SERVICE CARDS */
 .service-card {
   background: #ffffff;
   border-left: 6px solid var(--primary);
@@ -110,31 +95,37 @@ ul {
   margin-bottom: 20px;
 }
 
-.service-label {
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* TOGGLE BUTTON */
+.toggle-btn {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-left: 8px;
+  font-weight: bold;
+}
+
+.toggle-btn:hover {
+  background-color: var(--highlight);
 }
 
 .service-detail {
   display: none;
-  margin-top: 10px;
-  padding-left: 15px;
+  padding-left: 10px;
   border-left: 3px solid var(--primary);
-  font-size: 0.95em;
+  margin-top: 10px;
   color: #444;
-}
-
-/* RADIO BUTTONS */
-input[type="radio"] {
-  accent-color: var(--accent);
-  transform: scale(1.2);
-  margin-right: 6px;
-}
-
-input[type="radio"]:checked + label + .service-detail {
-  display: block;
+  font-size: 0.95em;
 }
 
 /* FOOTER */
