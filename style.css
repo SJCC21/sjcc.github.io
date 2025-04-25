@@ -36,6 +36,31 @@ header {
   object-fit: contain;
   display: block;
 }
+.hero-header {
+  background-image: url('logo.png'); /* or neighborhood.png if you switch */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-family: var(--font-header);
+  margin-bottom: 10px;
+}
+
+.hero-text .tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--accent);
+}
 
 /* NAVBAR */
 nav {
